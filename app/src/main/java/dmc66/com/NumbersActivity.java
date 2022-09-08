@@ -46,16 +46,16 @@ private MediaPlayer mMediaPlayer;
         // Create a list of words
 
        final ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word(R.drawable.zero,"صفر","Zero",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_one,"واحد","One",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_2,"إثنان","Two",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_3,"ثلاثة","Three",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_four,"أربعة","Four",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_5,"خمسة","Five",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.six,"ستّة","Six",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.seven,"سبعة","Seven",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_8,"ثامنية","Eight",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.number_9,"تعسة","Nine",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.zero,"صفر","Zero",R.raw.zero));
+        numberArrayList.add(new Word(R.drawable.number_one,"واحد","One",R.raw.one));
+        numberArrayList.add(new Word(R.drawable.number_2,"إثنان","Two",R.raw.two));
+        numberArrayList.add(new Word(R.drawable.number_3,"ثلاثة","Three",R.raw.three));
+        numberArrayList.add(new Word(R.drawable.number_four,"أربعة","Four",R.raw.four));
+        numberArrayList.add(new Word(R.drawable.number_5,"خمسة","Five",R.raw.five));
+        numberArrayList.add(new Word(R.drawable.six,"ستّة","Six",R.raw.six));
+        numberArrayList.add(new Word(R.drawable.seven,"سبعة","Seven",R.raw.seven));
+        numberArrayList.add(new Word(R.drawable.number_8,"ثامنية","Eight",R.raw.eight));
+        numberArrayList.add(new Word(R.drawable.number_9,"تعسة","Nine",R.raw.nine));
 
 
         /** Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
