@@ -18,14 +18,14 @@ public class ColorsActivity extends AppCompatActivity {
         // Create a list of words
 
         ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word(R.drawable.circlebleu,"ازرق","Bleu",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circleredd,"احمر","Red",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circleyelloww,"اصفر","Yellow",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circleyellow,"برتقالي","Orange",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circlegreen,"اخضر","Green",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circlepurple,"بنفسجي","purple",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circleblack,"اسود","Black",R.raw.rolling));
-        numberArrayList.add(new Word(R.drawable.circlewhite,"ابيض","White",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.circlebleu,"ازرق","Bleu",R.raw.bleu));
+        numberArrayList.add(new Word(R.drawable.circleredd,"احمر","Red",R.raw.red));
+        numberArrayList.add(new Word(R.drawable.circleyelloww,"اصفر","Yellow",R.raw.yellow));
+        numberArrayList.add(new Word(R.drawable.circleyellow,"برتقالي","Orange",R.raw.orange));
+        numberArrayList.add(new Word(R.drawable.circlegreen,"اخضر","Green",R.raw.green));
+        numberArrayList.add(new Word(R.drawable.circlepurple,"بنفسجي","purple",R.raw.purple));
+        numberArrayList.add(new Word(R.drawable.circleblack,"اسود","Black",R.raw.black));
+        numberArrayList.add(new Word(R.drawable.circlewhite,"ابيض","White",R.raw.white));
 
 
 
