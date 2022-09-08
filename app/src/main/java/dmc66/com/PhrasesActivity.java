@@ -18,13 +18,13 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create a list of words
 
         ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I "));
-        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me "));
-        numberArrayList.add(new Word("هل تمانع لو","Do you mind if "));
-        numberArrayList.add(new Word("هل مسموح لنا ان","Are we allowed to "));
-        numberArrayList.add(new Word("هل الممكن ان","Live just for your self nothing else "));
-        numberArrayList.add(new Word("تسطيع، بامكانك ان","Would it be possible for me to "));
-        numberArrayList.add(new Word("بالتاكيد،انا لا امانع","You may , you can "));
+        numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.rolling));
+        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.rolling));
+        numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.rolling));
+        numberArrayList.add(new Word("هل مسموح لنا ان","Are we allowed to ",R.raw.rolling));
+        numberArrayList.add(new Word("هل الممكن ان","Live just for your self nothing else ",R.raw.rolling));
+        numberArrayList.add(new Word("تسطيع، بامكانك ان","Would it be possible for me to ",R.raw.rolling));
+        numberArrayList.add(new Word("بالتاكيد،انا لا امانع","You may , you can ",R.raw.rolling));
       ;
 
 

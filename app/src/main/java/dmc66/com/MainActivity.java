@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity   {
 
 
         ArrayList<Word> arrayList = new ArrayList<>();
-        arrayList.add(new Word(R.drawable.one, "الارقام", "Numbers"));
-        arrayList.add(new Word(R.drawable.family, "العائلة", "Family"));
-        arrayList.add(new Word(R.drawable.colour, "الالوان", "Colors"));
-        arrayList.add(new Word(R.drawable.left_quotes, "الجمل", "Phrases"));
+        arrayList.add(new Word(R.drawable.one, "الارقام", "Numbers",R.raw.rolling));
+        arrayList.add(new Word(R.drawable.family, "العائلة", "Family",R.raw.rolling));
+        arrayList.add(new Word(R.drawable.colour, "الالوان", "Colors",R.raw.rolling));
+        arrayList.add(new Word(R.drawable.left_quotes, "الجمل", "Phrases",R.raw.rolling));
         ArrayAdapter<Word> myAdapter = new WordAdapter(this, arrayList);
         listView.setAdapter(myAdapter);
 

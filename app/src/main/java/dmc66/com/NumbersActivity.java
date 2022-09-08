@@ -45,17 +45,17 @@ private MediaPlayer mMediaPlayer;
 
         // Create a list of words
 
-       ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word(R.drawable.zero,"صفر","Zero"));
-        numberArrayList.add(new Word(R.drawable.number_one,"واحد","One"));
-        numberArrayList.add(new Word(R.drawable.number_2,"إثنان","Two"));
-        numberArrayList.add(new Word(R.drawable.number_3,"ثلاثة","Three"));
-        numberArrayList.add(new Word(R.drawable.number_four,"أربعة","Four"));
-        numberArrayList.add(new Word(R.drawable.number_5,"خمسة","Five"));
-        numberArrayList.add(new Word(R.drawable.six,"ستّة","Six"));
-        numberArrayList.add(new Word(R.drawable.seven,"سبعة","Seven"));
-        numberArrayList.add(new Word(R.drawable.number_8,"ثامنية","Eight"));
-        numberArrayList.add(new Word(R.drawable.number_9,"تعسة","Nine"));
+       final ArrayList<Word> numberArrayList = new ArrayList<>();
+        numberArrayList.add(new Word(R.drawable.zero,"صفر","Zero",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_one,"واحد","One",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_2,"إثنان","Two",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_3,"ثلاثة","Three",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_four,"أربعة","Four",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_5,"خمسة","Five",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.six,"ستّة","Six",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.seven,"سبعة","Seven",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_8,"ثامنية","Eight",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.number_9,"تعسة","Nine",R.raw.rolling));
 
 
         /** Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
@@ -83,14 +83,14 @@ private MediaPlayer mMediaPlayer;
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 // Release the media player if it currently exists because we are about to
                 // play a different sound file
-                /**releaseMediaPlayer();*/
+                releaseMediaPlayer();
 
                 // Get the {@link Word} object at the given position the user clicked on
-                /**Word word = words.get(position);*/
+                Word word = numberArrayList.get(position);
 
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
-                /** mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());*/
+                 mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getResourceAudioId());
 
                 // Start the audio file
                 mMediaPlayer.start();

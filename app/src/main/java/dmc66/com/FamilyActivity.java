@@ -18,12 +18,12 @@ public class FamilyActivity extends AppCompatActivity {
         // Create a list of words
 
         ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word(R.drawable.dad,"الاب","Father"));
-        numberArrayList.add(new Word(R.drawable.mother,"الام","Mother"));
-        numberArrayList.add(new Word(R.drawable.brother,"الاخ","Brother"));
-        numberArrayList.add(new Word(R.drawable.sister,"الاخت","Sister"));
-        numberArrayList.add(new Word(R.drawable.grandpa,"الجد","Grandfather"));
-        numberArrayList.add(new Word(R.drawable.grandma,"الجدة","Grandmother"));
+        numberArrayList.add(new Word(R.drawable.dad,"الاب","Father",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.mother,"الام","Mother",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.brother,"الاخ","Brother",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.sister,"الاخت","Sister",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.grandpa,"الجد","Grandfather",R.raw.rolling));
+        numberArrayList.add(new Word(R.drawable.grandma,"الجدة","Grandmother",R.raw.rolling));
 
 
         /** Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

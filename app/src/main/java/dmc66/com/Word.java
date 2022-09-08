@@ -32,7 +32,7 @@ public class Word{
     private String mArabicTranslation;
 
 
-   /* private int mResourceAudioId;*/
+    private int mResourceAudioId;
 
     /**
      * Create a new Word object.
@@ -44,10 +44,11 @@ public class Word{
      * @param mResourceAudioId is the resource ID for the audio file associated with this word
      */
 
-    public Word( String mArabicTranslation, String mDefaultTranslation) {
+    public Word( String mArabicTranslation, String mDefaultTranslation, int mResourceAudioId) {
 
             this.mArabicTranslation = mArabicTranslation;
             this.mDefaultTranslation = mDefaultTranslation;
+            this.mResourceAudioId = mResourceAudioId;
         }
 
     /**
@@ -62,11 +63,12 @@ public class Word{
      * @param mResourceImageId    is the drawable resource ID for the image associated with the word
      */
 
-    public Word(int mResourceImageId, String mArabicTranslation, String mDefaultTranslation) {
+    public Word(int mResourceImageId, String mArabicTranslation, String mDefaultTranslation , int mResourceAudioId) {
 
         this.mArabicTranslation = mArabicTranslation;
         this.mDefaultTranslation = mDefaultTranslation;
         this.mResourceImageId = mResourceImageId;
+        this.mResourceAudioId = mResourceAudioId;
     }
 
     /**
@@ -105,9 +107,9 @@ public class Word{
      * Return the audio resource ID of the word.
      */
 
-   /* public int getResourceAudioId() {
+    public int getResourceAudioId() {
         return mResourceAudioId;
-    }*/
+    }
 
 }
 
