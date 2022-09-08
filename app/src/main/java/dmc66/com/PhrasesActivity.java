@@ -18,13 +18,13 @@ public class PhrasesActivity extends AppCompatActivity {
         // Create a list of words
 
         ArrayList<Word> numberArrayList = new ArrayList<>();
-        numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.rolling));
-        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.rolling));
-        numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.rolling));
-        numberArrayList.add(new Word("هل مسموح لنا ان","Are we allowed to ",R.raw.rolling));
-        numberArrayList.add(new Word("هل الممكن ان","Live just for your self nothing else ",R.raw.rolling));
-        numberArrayList.add(new Word("تسطيع، بامكانك ان","Would it be possible for me to ",R.raw.rolling));
-        numberArrayList.add(new Word("بالتاكيد،انا لا امانع","You may , you can ",R.raw.rolling));
+        numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.cani));
+        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.woulditbepossibleformeto));
+        numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.doyoumindif));
+        numberArrayList.add(new Word("هل مسموح لنا ان","Are we allowed to ",R.raw.areweallowedto));
+        numberArrayList.add(new Word("هل الممكن ان","Is it possible to ",R.raw.isitpossibleto));
+        numberArrayList.add(new Word("تسطيع، بامكانك ان","Would it be possible for me to ",R.raw.woulditbepossibleformeto));
+        numberArrayList.add(new Word("بالتاكيد،انا لا امانع","You may , you can ",R.raw.youmayyoucan));
       ;
 
 
