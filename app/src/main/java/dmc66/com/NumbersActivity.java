@@ -87,7 +87,7 @@ private MediaPlayer mMediaPlayer;
 
                 // Get the {@link Word} object at the given position the user clicked on
                 Word word = numberArrayList.get(position);
-
+                Log.v("NumbersActivity", "Current word: " + word);
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
                  mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getResourceAudioId());
