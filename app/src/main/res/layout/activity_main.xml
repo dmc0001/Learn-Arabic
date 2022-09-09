@@ -31,7 +31,7 @@
                 android:layout_marginLeft="54dp"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="Completed"
+                android:text="Welcome To"
                 android:textColor="#0ED290"
                 android:textSize="18dp"
 
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="54dp"
                 android:fontFamily="@font/poppins_bold"
-                android:text="0% of Arabic"
+                android:text="Learn Arabic"
                 android:textColor="#565454"
                 android:textSize="22dp"
 
