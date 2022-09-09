@@ -40,7 +40,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
         ArrayList<Word> numberArrayList = new ArrayList<>();
         numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.cani));
-        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.woulditbepossibleformeto));
+        numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.allowme));
         numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.doyoumindif));
         numberArrayList.add(new Word("هل مسموح لنا ان","Are we allowed to ",R.raw.areweallowedto));
         numberArrayList.add(new Word("هل الممكن ان","Is it possible to ",R.raw.isitpossibleto));
