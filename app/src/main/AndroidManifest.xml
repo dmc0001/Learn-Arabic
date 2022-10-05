@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="dmc66.com">
 
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,22 +18,27 @@
 
         <activity
             android:name=".PhrasesActivity"
+            android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ColorsActivity"
+            android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".FamilyActivity"
+            android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".NumbersActivity"
+            android:screenOrientation="portrait"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
