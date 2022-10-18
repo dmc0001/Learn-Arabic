@@ -39,45 +39,45 @@ public class MainActivity extends AppCompatActivity   {
         // Set a click listener on that View
 
         listView.setOnItemClickListener((adapterView, view, position, l) -> {
-            switch (position){
-                case 0:{
-                    // This case will be executed when the numbers category is clicked on.
-                    Toast.makeText(view.getContext(),"Open the list of numbers",Toast.LENGTH_SHORT).show();
-                    /** Create a new intent to open the {@link NumbersActivity}*/
-                    Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
-                    // Start the new activity
-                    startActivity(numbersIntent);
-                    break;
-                }
-                case 1:{
-                    // This case will be executed when the family category is clicked on.
-                    Toast.makeText(context,"Open the list of family",Toast.LENGTH_SHORT).show();
-                    /** Create a new intent to open the {@link FamilyActivity}*/
-                    Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
-                    // Start the new activity
-                    startActivity(familyIntent);
-                    break;
-                }
-                case 2:{
-                    // This case will be executed when the colors category is clicked on.
-                    Toast.makeText(view.getContext(),"Open the list of colors",Toast.LENGTH_SHORT).show();
-                    /** Create a new intent to open the {@link ColorsActivity}*/
-                    Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
-                    // Start the new activity
-                    startActivity(colorsIntent);
-                    break;
-                }
-                case 3:{
-                    // This case will be executed when the phrases category is clicked on.
-                    Toast.makeText(view.getContext(),"Open the list of phrases",Toast.LENGTH_SHORT).show();
-                    /** Create a new intent to open the {@link PhrasesActivity}*/
-                    Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
-                    // Start the new activity
-                    startActivity(phrasesIntent);
-                    break;
+                    switch (position){
+                        case 0:{
+                            // This case will be executed when the numbers category is clicked on.
+                            Toast.makeText(view.getContext(),"Open the list of numbers",Toast.LENGTH_SHORT).show();
+                            /** Create a new intent to open the {@link NumbersActivity}*/
+                            Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                            // Start the new activity
+                            startActivity(numbersIntent);
+                            break;
+                        }
+                        case 1:{
+                            // This case will be executed when the family category is clicked on.
+                            Toast.makeText(context,"Open the list of family",Toast.LENGTH_SHORT).show();
+                            /** Create a new intent to open the {@link FamilyActivity}*/
+                            Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
+                            // Start the new activity
+                            startActivity(familyIntent);
+                            break;
+                        }
+                        case 2:{
+                            // This case will be executed when the colors category is clicked on.
+                            Toast.makeText(view.getContext(),"Open the list of colors",Toast.LENGTH_SHORT).show();
+                            /** Create a new intent to open the {@link ColorsActivity}*/
+                            Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                            // Start the new activity
+                            startActivity(colorsIntent);
+                            break;
+                        }
+                        case 3:{
+                            // This case will be executed when the phrases category is clicked on.
+                            Toast.makeText(view.getContext(),"Open the list of phrases",Toast.LENGTH_SHORT).show();
+                            /** Create a new intent to open the {@link PhrasesActivity}*/
+                            Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                            // Start the new activity
+                            startActivity(phrasesIntent);
+                            break;
 
-                }
-            }
+                        }
+                    }
 
                 }
         );
@@ -86,4 +86,4 @@ public class MainActivity extends AppCompatActivity   {
     }
 
 
-    }
+}
