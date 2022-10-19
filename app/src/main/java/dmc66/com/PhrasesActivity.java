@@ -2,6 +2,7 @@ package dmc66.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -69,13 +70,15 @@ public class PhrasesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
         /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
-
+        // Create and setup the {@link AudioManager} to request audio focus
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         // Create a list of words
+        final ArrayList<Word> numberArrayList = new ArrayList<>();
 
-        ArrayList<Word> numberArrayList = new ArrayList<>();
         numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.cani));
         numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.allowme));
         numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.doyoumindif));
@@ -128,6 +131,7 @@ public class PhrasesActivity extends AppCompatActivity {
         });
     }
 
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -149,12 +153,16 @@ public class PhrasesActivity extends AppCompatActivity {
             // Set the media player back to null. For our code, we've decided that
             // setting the media player to null is an easy way to tell that the media player
             // is not configured to play an audio file at the moment.
-           // mMediaPlayer = null;
+            mMediaPlayer = null;
+
             // Regardless of whether or not we were granted audio focus, abandon it. This also
             // unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
-         //  mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
+            mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
     }
+
+
+
 
 
 }

@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_medium"
+        android:fontFamily="@font/poppins_bold"
         android:text="Learn Arabic"
         android:textColor="@color/black"
         android:textFontWeight="600"
