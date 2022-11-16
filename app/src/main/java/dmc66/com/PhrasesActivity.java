@@ -2,6 +2,7 @@ package dmc66.com;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -23,12 +24,10 @@ public class PhrasesActivity extends AppCompatActivity {
      */
     private AudioManager mAudioManager;
 
-
     /**
      * This listener gets triggered when the {@link MediaPlayer} has completed
      * playing the audio file.
      */
-
 
     private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
@@ -67,18 +66,15 @@ public class PhrasesActivity extends AppCompatActivity {
         }
     };
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phrases);
+        setContentView(R.layout.activity_family);
         /** TODO: Insert all the code from the NumberActivity’s onCreate() method after the setContentView method call */
-        // Create and setup the {@link AudioManager} to request audio focus
-        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        // Create a list of words
-        final ArrayList<Word> numberArrayList = new ArrayList<>();
 
+        // Create a list of words
+
+        ArrayList<Word> numberArrayList = new ArrayList<>();
         numberArrayList.add(new Word("هل استطيع","May I, might I, can I, could I ",R.raw.cani));
         numberArrayList.add(new Word("هل تسمح","Would you let me , allow me ",R.raw.allowme));
         numberArrayList.add(new Word("هل تمانع لو","Do you mind if ",R.raw.doyoumindif));
@@ -86,14 +82,12 @@ public class PhrasesActivity extends AppCompatActivity {
         numberArrayList.add(new Word("هل الممكن ان","Is it possible to ",R.raw.isitpossibleto));
         numberArrayList.add(new Word("تسطيع، بامكانك ان","Would it be possible for me to ",R.raw.woulditbepossibleformeto));
         numberArrayList.add(new Word("بالتاكيد،انا لا امانع","You may , you can ",R.raw.youmayyoucan));
-      ;
-
 
         /** Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
          *adapter knows how to create list items for each item in the list.
          */
 
-        WordAdapter items = new WordAdapter(this,numberArrayList);
+        WordAdapter items = new WordAdapter(PhrasesActivity.this,numberArrayList);
 
         /** Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
          * There should be a {@link ListView} with the view ID called list, which is declared in the
@@ -119,7 +113,7 @@ public class PhrasesActivity extends AppCompatActivity {
                 Log.v("FamilyActivity", "Current word: " + word);
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
-                mMediaPlayer = MediaPlayer.create(PhrasesActivity.this, word.getResourceAudioId());
+                mMediaPlayer = MediaPlayer.create(PhrasesActivity.this, word.getAudioResourceId());
 
                 // Start the audio file
                 mMediaPlayer.start();
@@ -130,7 +124,6 @@ public class PhrasesActivity extends AppCompatActivity {
             }
         });
     }
-
 
     @Override
     protected void onStop() {
@@ -153,17 +146,13 @@ public class PhrasesActivity extends AppCompatActivity {
             // Set the media player back to null. For our code, we've decided that
             // setting the media player to null is an easy way to tell that the media player
             // is not configured to play an audio file at the moment.
-            mMediaPlayer = null;
+           // mMediaPlayer = null;
 
             // Regardless of whether or not we were granted audio focus, abandon it. This also
             // unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
-            mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
+           // mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
     }
 
 
-
-
-
 }
-

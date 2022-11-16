@@ -115,7 +115,7 @@ public class ColorsActivity extends AppCompatActivity {
                 Log.v("FamilyActivity", "Current word: " + word);
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
-                mMediaPlayer = MediaPlayer.create(ColorsActivity.this, word.getResourceAudioId());
+                mMediaPlayer = MediaPlayer.create(ColorsActivity.this, word.getAudioResourceId());
 
                 // Start the audio file
                 mMediaPlayer.start();

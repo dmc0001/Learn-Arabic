@@ -112,7 +112,7 @@ public class FamilyActivity extends AppCompatActivity {
                 Log.v("FamilyActivity", "Current word: " + word);
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
-                mMediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getResourceAudioId());
+                mMediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceId());
 
                 // Start the audio file
                 mMediaPlayer.start();
@@ -145,11 +145,11 @@ public class FamilyActivity extends AppCompatActivity {
             // Set the media player back to null. For our code, we've decided that
             // setting the media player to null is an easy way to tell that the media player
             // is not configured to play an audio file at the moment.
-            mMediaPlayer = null;
+            //mMediaPlayer = null;
 
             // Regardless of whether or not we were granted audio focus, abandon it. This also
             // unregisters the AudioFocusChangeListener so we don't get anymore callbacks.
-            mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
+           // mAudioManager.abandonAudioFocus(mOnAudioFocusChangeListener);
         }
     }
 

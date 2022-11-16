@@ -119,7 +119,7 @@ public class NumbersActivity extends AppCompatActivity {
                 Log.v("NumbersActivity", "Current word: " + word);
                 // Create and setup the {@link MediaPlayer} for the audio resource associated
                 // with the current word
-                 mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getResourceAudioId());
+                 mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());
 
                 // Start the audio file
                 mMediaPlayer.start();
